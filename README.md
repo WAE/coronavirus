@@ -58,5 +58,17 @@ Recommended Internet searches during current viral pandemic:
 
    hydration virus site:.gov
 ```
+Are bacteria, cancers, fungi and worms viruses?
 Bacteria, cancers, fungi and worms are not viruses.
+
+Les bactéries, le cancer, les champignons et les vers sont-ils des virus?
+Les bactéries, les cancers, les champignons et les vers ne sont pas des virus.
+
+¿Son bacterias, cáncer, hongos y gusanos virus?
+Las bacterias, los cánceres, los hongos y los gusanos no son virus.
+
+> #### Iceland has tested more of its population for coronavirus than anywhere else. Here's what it learned
+> Iceland has achieved something no other country has: tested 10% of its population for coronavirus, a figure far higher than anywhere else in the world. 
+> While many countries publish daily and cumulative infection and death rates, there don't appear to be comparable statistics for other nations available that give an overall sense of how deep-rooted the virus is, or how many carriers of the disease, at any given time, may have no symptoms. 
+Reference: https://amp.usatoday.com/amp/2959797001 retrieved 20200410
 <!--README.md EOF-->
