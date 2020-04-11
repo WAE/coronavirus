@@ -24,7 +24,7 @@ Run this command to see all available country names:
 ```
    coronavirus.statistics.zsh
 ```
-[![Screenshot_20200408-062343.png](./docs/images/Screenshot_20200408-062343.png)](https://github.com/WAE/coronavirus/raw/master/docs/images/Screenshot_20200408-062343.png)
+[![Screenshot_20200408-062343.png](https://github.com/WAE/coronavirus/raw/master/docs/images/Screenshot_20200408-062343.png)](https://github.com/WAE/coronavirus/raw/master/docs/images/Screenshot_20200408-062343.png)
 
 To configure default statistical output for China run this command in the root directory of this repository after cloning:
 ```
