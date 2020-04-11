@@ -104,9 +104,9 @@ _CONCO_() {
 	printf "%s\\n" "${#ARR[@]}"
 }
 
-[ -z "${1:-}" ] && _CONCO_ && _QUIT_ "${0##*/}"
-[[ "${1//-}" = [Hh]* ]] && [ -z "${2:-}" ] && _HELP_ $0 && _QUIT_ "${0##*/}" 
+[ -z "${1:-}" ] && _CONCO_ && _QUIT_ "$0"
+[[ "${1//-}" = [Hh]* ]] && [ -z "${2:-}" ] && _HELP_ $0 && _QUIT_ "$0" 
 _ARR_
 [ ! -z "${1:-}" ] && [ ! -z "${2:-}" ] && COUNTRYNAME="$1" && _ARR_ && COUNTRYNAME="$2" && _ARR_ 
-_QUIT_ "${0##*/}"
+_QUIT_ "$0"
 # coronavirus.statistics.zsh EOF
