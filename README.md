@@ -78,16 +78,16 @@ Las bacterias, los cánceres, los hongos y los gusanos no son virus.
 
 Reference: https://amp.usatoday.com/amp/2959797001 retrieved on 20200410
 
-> One by one, nurses got coronavirus at a Silicon Valley hospital while management kept quiet
+> #### One by one, nurses got coronavirus at a Silicon Valley hospital while management kept quiet
 
 https://m.sfgate.com/news/article/One-by-one-nurses-got-coronavirus-at-a-Silicon-15193580.php 20200411
 
-> Coronavirus patients can suffer lasting bodily damage, even after recovery
+> #### Coronavirus patients can suffer lasting bodily damage, even after recovery
 
 https://nypost.com/2020/04/11/coronavirus-patients-can-suffer-lasting-bodily-damage/ 20200411
 
 
-> Private jet carrying vacationers turned back after landing in the south of France
+> #### Private jet carrying vacationers turned back after landing in the south of France
 > A group of international vacationers who flew from London to the south of France in a private jet were turned away by French police after they landed.
 > had "a lot of money" and wanted "to just pay a fine and go to Cannes,"
 > nine passengers returned to London, including the three French nationals, while a Ukrainian passenger rented a plane to Berlin
@@ -95,9 +95,14 @@ https://nypost.com/2020/04/11/coronavirus-patients-can-suffer-lasting-bodily-dam
 https://www.cnn.com/travel/amp/private-jet-turned-back-cannes-france/index.html 20200411 
 
 4.9763% = GERMANY 20200411 NEW MORTALITY RATE (0.0000% is ideal)
+
 6.1047% = CROATIA 20200411 NEW MORTALITY RATE (0.0000% is ideal)
+
 29.1589% = ROMANIA 20200411 NEW MORTALITY RATE (0.0000% is ideal)
+
 35.4080% = FRANCE 20200411 NEW MORTALITY RATE (0.0000% is ideal)
+
 49.3590% = UKRAINE 20200411 NEW MORTALITY RATE (0.0000% is ideal)
+	
 96.9109% = UK 20200411 NEW MORTALITY RATE (0.0000% is ideal)
 <!--README.md EOF-->
