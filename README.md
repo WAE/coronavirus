@@ -63,12 +63,12 @@ Are bacteria, cancers, fungi and worms viruses?
 Bacteria, cancers, fungi and worms are not viruses.
 
 
-Les bactéries, le cancer, les champignons et les vers sont-ils des virus?
+Les bactéries, les cancers, les champignons et les vers sont-ils des virus?
 
 Les bactéries, les cancers, les champignons et les vers ne sont pas des virus.
 
 
-¿Son bacterias, cáncer, hongos y gusanos virus?
+¿Son bacterias, los cánceres, hongos y gusanos virus?
 
 Las bacterias, los cánceres, los hongos y los gusanos no son virus.
 
@@ -114,4 +114,12 @@ https://www.cnn.com/travel/amp/private-jet-turned-back-cannes-france/index.html 
 > NASA data reveals air pollution in northeast areas of the US have dropped by 30 percent as millions are under lockdown due to the coronavirus pandemic
 
 https://www.dailymail.co.uk/sciencetech/article-8208831/NASA-data-shows-air-pollution-northeast-areas-dropped-30-percent-amid-coronavirus.html
-<!--README.md EOF-->
+
+> The Bronx Zoo tiger who tested positive for the coronavirus is “writing the book” on how big cats are affected by the deadly bug, according to the animal hub’s vet.
+zookeeper.
+> On the plus side, the zoo says Nadia is on the mend and will be just fine.
+> However, the incident has prompted the zoo to put new procedures in place to protect the animals in the future.
+> “We are practicing social distancing with our wild cats as well,” Calle said
+
+https://nypost.com/2020/04/12/how-a-bronx-zoo-tiger-was-tested-for-coronavirus/ 20200412
+<!--coronavirus README.md EOF-->
