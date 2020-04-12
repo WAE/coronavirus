@@ -59,23 +59,31 @@ Recommended Internet searches during current viral pandemic:
    hydration virus site:.gov
 ```
 Are bacteria, cancers, fungi and worms viruses?
+
 Bacteria, cancers, fungi and worms are not viruses.
 
+
 Les bactéries, le cancer, les champignons et les vers sont-ils des virus?
+
 Les bactéries, les cancers, les champignons et les vers ne sont pas des virus.
 
+
 ¿Son bacterias, cáncer, hongos y gusanos virus?
+
 Las bacterias, los cánceres, los hongos y los gusanos no son virus.
 
 > #### Iceland has tested more of its population for coronavirus than anywhere else. Here's what it learned
 > Iceland has achieved something no other country has: tested 10% of its population for coronavirus, a figure far higher than anywhere else in the world. 
 > While many countries publish daily and cumulative infection and death rates, there don't appear to be comparable statistics for other nations available that give an overall sense of how deep-rooted the virus is, or how many carriers of the disease, at any given time, may have no symptoms. 
+
 Reference: https://amp.usatoday.com/amp/2959797001 retrieved on 20200410
 
 > One by one, nurses got coronavirus at a Silicon Valley hospital while management kept quiet
+
 https://m.sfgate.com/news/article/One-by-one-nurses-got-coronavirus-at-a-Silicon-15193580.php 20200411
 
 > Coronavirus patients can suffer lasting bodily damage, even after recovery
+
 https://nypost.com/2020/04/11/coronavirus-patients-can-suffer-lasting-bodily-damage/ 20200411
 
 
@@ -83,11 +91,13 @@ https://nypost.com/2020/04/11/coronavirus-patients-can-suffer-lasting-bodily-dam
 > A group of international vacationers who flew from London to the south of France in a private jet were turned away by French police after they landed.
 > had "a lot of money" and wanted "to just pay a fine and go to Cannes,"
 > nine passengers returned to London, including the three French nationals, while a Ukrainian passenger rented a plane to Berlin
+
+https://www.cnn.com/travel/amp/private-jet-turned-back-cannes-france/index.html 20200411 
+
 4.9763% = GERMANY 20200411 NEW MORTALITY RATE (0.0000% is ideal)
 6.1047% = CROATIA 20200411 NEW MORTALITY RATE (0.0000% is ideal)
 29.1589% = ROMANIA 20200411 NEW MORTALITY RATE (0.0000% is ideal)
 35.4080% = FRANCE 20200411 NEW MORTALITY RATE (0.0000% is ideal)
 49.3590% = UKRAINE 20200411 NEW MORTALITY RATE (0.0000% is ideal)
 96.9109% = UK 20200411 NEW MORTALITY RATE (0.0000% is ideal)
-> https://www.cnn.com/travel/amp/private-jet-turned-back-cannes-france/index.html 20200411 
 <!--README.md EOF-->
