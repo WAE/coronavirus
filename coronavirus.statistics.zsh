@@ -68,19 +68,19 @@ DATE="$(date +%Y%m%d)"
 [ -f "$RDR/.conf/COUNTRYNAME" ] && COUNTRYNAME="$(cat $RDR/.conf/COUNTRYNAME)" || COUNTRYNAME="us"
 
 _ARR_() {
-	STATKEY=("Country, Other" "Total Cases" "New Cases" "Total Deaths" "New Deaths" "Total Recovered" "Active Cases" "Serious, Critical" "Tot Cases/ 1M pop" "Deaths/ 1M pop" "Total Tests" "Tests/ 1M pop")
+	STATKEY=("Country" "Total Cases" "New Cases" "Total Deaths" "New Deaths" "Total Recovered" "Active Cases" "Serious, Critical" "Tot Cases/ 1M pop" "Deaths/ 1M pop" "Total Tests" "Tests/ 1M pop")
 	INDEX="$(awk '{gsub("\"></td>", "\">0</td>", $0); print}' index.html)"
 	printf "\\n%s\\n" "$COUNTRYNAME:u $DATE Coronavirus Pandemic Statistics:"
 	COUNTRYSTAT=($(grep -iA 12 "ref=\"country/$COUNTRYNAME/" <<< "$INDEX" | grep -oP '(?<=">).*(?=</td)' | grep -v class | head -n 11 | sed 's/+//g' | sed 's/,//g' ))
 	DENOM="$((${COUNTRYSTAT[3]}+${COUNTRYSTAT[5]}))"
-	printf "%0.4f%s\\n" "$(((${COUNTRYSTAT[3]}/$DENOM.)*100))" "% = $COUNTRYNAME:u $DATE OLD MORTALITY RATE (0.0000% is ideal) = ( ${STATKEY[4]} ) / ( ${STATKEY[4]} + ${STATKEY[6]} )"
+	printf "%0.4f%s\\n" "$(((${COUNTRYSTAT[3]}/$DENOM.)*100))" "% = $COUNTRYNAME:u $DATE OLD MORTALITY % RATE (0.0000% is ideal) = ( ${STATKEY[4]} ) / ( ${STATKEY[4]} + ${STATKEY[6]} )"
  	NUMER="$((${COUNTRYSTAT[3]}+${COUNTRYSTAT[4]}))"
  	DENOM="$((${COUNTRYSTAT[3]}+${COUNTRYSTAT[4]}+${COUNTRYSTAT[5]}))"
-	printf "%0.4f%s\\n" "$((($NUMER/$DENOM.)*100))" "% = $COUNTRYNAME:u $DATE NEW MORTALITY RATE (0.0000% is ideal) = ( ${STATKEY[5]} + ${STATKEY[4]} ) / ( ${STATKEY[5]} + ${STATKEY[4]} + ${STATKEY[6]} )"
-	printf "%0.4f%s\\n" "$(((${COUNTRYSTAT[6]}/${COUNTRYSTAT[1]}.)*100))" "% = $COUNTRYNAME:u $DATE OLD SPREAD RATE (0.0000% is ideal) = ( ${STATKEY[7]} ) / ( ${STATKEY[2]} )"
+	printf "%0.4f%s\\n" "$((($NUMER/$DENOM.)*100))" "% = $COUNTRYNAME:u $DATE NEW MORTALITY % RATE (0.0000% is ideal) = ( ${STATKEY[5]} + ${STATKEY[4]} ) / ( ${STATKEY[5]} + ${STATKEY[4]} + ${STATKEY[6]} )"
+	printf "%0.4f%s\\n" "$(((${COUNTRYSTAT[6]}/${COUNTRYSTAT[1]}.)*100))" "% = $COUNTRYNAME:u $DATE OLD SPREAD % RATE (0.0000% is ideal) = ( ${STATKEY[7]} ) / ( ${STATKEY[2]} )"
  	NUMER="$((${COUNTRYSTAT[2]}+${COUNTRYSTAT[6]}))"
  	DENOM="$((${COUNTRYSTAT[2]}+${COUNTRYSTAT[1]}))"
-	printf "%0.4f%s\\n" "$((($NUMER/$DENOM.)*100))" "% = $COUNTRYNAME:u $DATE NEW SPREAD RATE (0.0000% is ideal) = ( ${STATKEY[3]} + ${STATKEY[7]} ) / ( ${STATKEY[3]} + ${STATKEY[2]} )"
+	printf "%0.4f%s\\n" "$((($NUMER/$DENOM.)*100))" "% = $COUNTRYNAME:u $DATE NEW SPREAD % RATE (0.0000% is ideal) = ( ${STATKEY[3]} + ${STATKEY[7]} ) / ( ${STATKEY[3]} + ${STATKEY[2]} )"
 	printf "%s\\n" "Based upon this published data: "
 	printf "%s	%7s\\n" "${STATKEY[2]}" "${COUNTRYSTAT[1]}"
 	printf "%s	%7s\\n" "${STATKEY[3]}" "${COUNTRYSTAT[2]}"
