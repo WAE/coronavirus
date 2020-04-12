@@ -122,4 +122,9 @@ zookeeper.
 > “We are practicing social distancing with our wild cats as well,” Calle said
 
 https://nypost.com/2020/04/12/how-a-bronx-zoo-tiger-was-tested-for-coronavirus/ 20200412
+
+Run to following command to see current statistics for iceland uk and default country: 	
+```
+coronavirus.statistics.zsh iceland uk # lists statistics for default country, iceland and uk 
+```
 <!--coronavirus README.md EOF-->
