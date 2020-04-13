@@ -125,6 +125,10 @@ https://www.dailymail.co.uk/sciencetech/article-8208831/NASA-data-shows-air-poll
 
 https://nypost.com/2020/04/12/how-a-bronx-zoo-tiger-was-tested-for-coronavirus/ 20200412
 
+> #### The coronavirus spreads at least 13 feet, travels on shoes: CDC
+
+https://nypost.com/2020/04/12/the-coronavirus-can-travel-at-least-13-feet-new-study-shows/
+
 The following command will attempt to show the current statistics for the default country, Iceland and Norway: 	
 ```
 coronavirus.statistics.zsh iceland norway # lists statistics for the default country, Iceland and Norway 
