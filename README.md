@@ -123,7 +123,7 @@ zookeeper.
 
 https://nypost.com/2020/04/12/how-a-bronx-zoo-tiger-was-tested-for-coronavirus/ 20200412
 
-The following command will attempt to show the current statistics for the default country, iceland and norway: 	
+The following command will attempt to show the current statistics for the default country, Iceland and Norway: 	
 ```
 coronavirus.statistics.zsh iceland norway # lists statistics for the default country, Iceland and Norway 
 ```
