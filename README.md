@@ -115,7 +115,7 @@ Countries mentioned in private jet article:
 
 > #### NASA data reveals air pollution in northeast areas of the US have dropped by 30 percent as millions are under lockdown due to the coronavirus pandemic
 
-https://www.dailymail.co.uk/sciencetech/article-8208831/NASA-data-shows-air-pollution-northeast-areas-dropped-30-percent-amid-coronavirus.html
+https://www.dailymail.co.uk/sciencetech/article-8208831/NASA-data-shows-air-pollution-northeast-areas-dropped-30-percent-amid-coronavirus.html 20200412
 
 > #### How a Bronx Zoo tiger was tested for coronavirus
 
