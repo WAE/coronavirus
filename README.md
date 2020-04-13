@@ -99,6 +99,8 @@ https://nypost.com/2020/04/11/coronavirus-patients-can-suffer-lasting-bodily-dam
 
 https://www.cnn.com/travel/amp/private-jet-turned-back-cannes-france/index.html 20200411 
 
+Countries mentioned in private jet article:
+
 4.9763% = GERMANY 20200411 NEW MORTALITY RATE (0.0000% is ideal)
 
 6.1047% = CROATIA 20200411 NEW MORTALITY RATE (0.0000% is ideal)
@@ -115,9 +117,10 @@ https://www.cnn.com/travel/amp/private-jet-turned-back-cannes-france/index.html 
 
 https://www.dailymail.co.uk/sciencetech/article-8208831/NASA-data-shows-air-pollution-northeast-areas-dropped-30-percent-amid-coronavirus.html
 
-> The Bronx Zoo tiger who tested positive for the coronavirus is “writing the book” on how big cats are affected by the deadly bug, according to the animal hub’s vet.
+> #### How a Bronx Zoo tiger was tested for coronavirus
+
 > On the plus side, the zoo says Nadia is on the mend and will be just fine.
-> However, the incident has prompted the zoo to put new procedures in place to protect the animals in the future.
+
 > “We are practicing social distancing with our wild cats as well,” Calle said
 
 https://nypost.com/2020/04/12/how-a-bronx-zoo-tiger-was-tested-for-coronavirus/ 20200412
