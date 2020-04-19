@@ -46,17 +46,17 @@ _INSTALLCOMS_() {
 
 _INSTALL_() {
 	printf "\\e[1;38;5;117m%s\\e[0m\\n" "Beginning $RDR setup:"
-	STRING1="Command \`au\` enables rollback; Available at https://wae.github.io/au/: Continuing..."
-	STRING2="Cannot update $RDR prerequisites: Continuing..."
-	STRING3="Cannot clone $RDR: Continuing..."
+	STRING1="Command \` au \` enables rollback;  Available at this https://wae.github.io/au/ website:  Continuing..."
+	STRING2="Cannot update $RDR prerequisites:  Continuing..."
+	STRING3="Cannot clone $RDR:  Continuing..."
 	[ ! -z "$(command -v "git")" ] || _INSTALLCOMS_
 	[ ! -z "$(command -v "wget")" ] || _INSTALLCOMS_
 	[ ! -z "$(command -v "zsh")" ] || _INSTALLCOMS_
 	mkdir -p "$RDR" # creates directories
-	cd "$HOME/WAE/virus/" # changes working directory
+	cd "$HOME/WAE/virus/" # change working directory
 	git clone https://github.com/WAE/coronavirus || printf "\\e[1;38;5;117m%s\\e[0m\\n" "$STRING3"
 	cd "$RDR"
-	printf "\\e[1;38;5;117m%s\\e[0m\\n" "$RDR setup: DONE"
+	printf "\\e[1;38;5;117m%s\\e[0m\\n" "$RDR setup:  DONE"
 }
 
 [ -d "$RDR" ] && cd "$RDR" || _INSTALL_
@@ -70,8 +70,11 @@ DATE="$(date +%Y%m%d)"
 _ARR_() {
 	STATKEY=("Country" "Total Cases" "New Cases" "Total Deaths" "New Deaths" "Total Recovered" "Active Cases" "Serious, Critical" "Tot Cases/ 1M pop" "Deaths/ 1M pop" "Total Tests" "Tests/ 1M pop")
 	INDEX="$(awk '{gsub("\"></td>", "\">0</td>", $0); print}' index.html)"
-	printf "\\n%s\\n" "$COUNTRYNAME:u $DATE Coronavirus Pandemic Statistics:"
 	COUNTRYSTAT=($(grep -iA 12 "ref=\"country/$COUNTRYNAME/" <<< "$INDEX" | grep -oP '(?<=">).*(?=</td)' | grep -v class | head -n 11 | sed 's/+//g' | sed 's/,//g' ))
+	[ "${COUNTRYSTAT[5]}" = "N/A" ] && printf "\\n%s\\n\\n" "WARNING:  As $COUNTRYNAME:u is not reporting all statistics today, statistics are unavailable for $COUNTRYNAME:u." ; _DARR_ || _CARR_
+}
+
+_CARR_() {
 	DENOM="$((${COUNTRYSTAT[3]}+${COUNTRYSTAT[5]}))"
 	printf "%0.4f%s\\n" "$(((${COUNTRYSTAT[3]}/$DENOM.)*100))" "% = $COUNTRYNAME:u $DATE OLD MORTALITY % RATE (0.0000% is ideal) = ( ${STATKEY[4]} ) / ( ${STATKEY[4]} + ${STATKEY[6]} )"
  	NUMER="$((${COUNTRYSTAT[3]}+${COUNTRYSTAT[4]}))"
@@ -81,6 +84,10 @@ _ARR_() {
  	NUMER="$((${COUNTRYSTAT[2]}+${COUNTRYSTAT[6]}))"
  	DENOM="$((${COUNTRYSTAT[2]}+${COUNTRYSTAT[1]}))"
 	printf "%0.4f%s\\n" "$((($NUMER/$DENOM.)*100))" "% = $COUNTRYNAME:u $DATE NEW SPREAD % RATE (0.0000% is ideal) = ( ${STATKEY[3]} + ${STATKEY[7]} ) / ( ${STATKEY[3]} + ${STATKEY[2]} )"
+	_DARR_
+}
+
+_DARR_() {
 	printf "%s\\n" "Based upon this published data: "
 	printf "%s	%7s\\n" "${STATKEY[2]}" "${COUNTRYSTAT[1]}"
 	printf "%s	%7s\\n" "${STATKEY[3]}" "${COUNTRYSTAT[2]}"
