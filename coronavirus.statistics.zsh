@@ -14,9 +14,9 @@
 # # 
 # #    cd ~/WAE/virus/coronavirus #  changes working directory
 # # 
-# #    zsh coronavirus.statistics.zsh #  lists country names
+# #    coronavirus.statistics.zsh #  lists country names
 # # 
-# #    zsh coronavirus.statistics.zsh new-zealand uk #  lists statistics
+# #    coronavirus.statistics.zsh new-zealand uk #  lists statistics
 # # 
 # # ```
 set -eu
