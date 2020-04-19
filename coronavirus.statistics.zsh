@@ -70,7 +70,7 @@ _ARR_() {
 	STATKEY=("Country" "Total Cases" "New Cases" "Total Deaths" "New Deaths" "Total Recovered" "Active Cases" "Serious, Critical" "Tot Cases/ 1M pop" "Deaths/ 1M pop" "Total Tests" "Tests/ 1M pop")
 	INDEX="$(awk '{gsub("\"></td>", "\">0</td>", $0); print}' index.html)"
 	COUNTRYSTAT=($(grep -iA 12 "ref=\"country/$COUNTRYNAME/" <<< "$INDEX" | grep -oP '(?<=">).*(?=</td)' | grep -v class | head -n 11 | sed 's/+//g' | sed 's/,//g' ))
-	[ "${COUNTRYSTAT[5]}" = "N/A" ] && printf "\\n%s\\n\\n" "WARNING:  Statistics for $COUNTRYNAME:u are not available for $DATE;  Continuing..." && _DARR_ || _CARR_
+	[ "${COUNTRYSTAT[5]}" = "N/A" ] && printf "\\n%s\\n\\n" "WARNING:  Statistics for $COUNTRYNAME:u $DATE are not available;  Continuing..." && _DARR_ || _CARR_
 }
 
 _CARR_() {
