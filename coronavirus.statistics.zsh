@@ -21,7 +21,7 @@
 # # ```
 set -eu
 RDR="$HOME/WAE/virus/coronavirus"
-_QUIT_() {
+_TERM_() {
 	[ -f "$RDR/index.html" ] && rm "$RDR/index.html"
 	printf "\\n" 
 	printf "%s\\n" "Related Internet Searches:"
@@ -34,7 +34,7 @@ _QUIT_() {
 	unset ARR
 	exit
 }
-trap '_QUIT_ $LINENO $?' ERR EXIT HUP INT TERM QUIT 
+trap '_TERM_ $LINENO $?' ERR EXIT HUP INT TERM QUIT 
 
 _HELP_() {
 	grep -w "\\#\\ \\#" "$1" | sed "s/\\#\\ \\#\\ //g" 
