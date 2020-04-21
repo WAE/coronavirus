@@ -5,6 +5,6 @@
 set -eu
 RDR="$HOME/WAE/virus/coronavirus"
 DATE="$(date +%Y%m%d)"
-[ -d "$RDR/output" ] && mkdir -p "$RDR/output" 
+[ ! -d "$RDR/output" ] && mkdir -p "$RDR/output" 
 "$RDR/scripts/countries.sh" | grep "NEW MORTALITY" | sort -g | uniq | awk '{gsub(/NEW MORTALITY.*/,"")}1' > "$RDR/output/by.new.mortality.$DATE.md" 
 # by.new.mortality.sh EOF
