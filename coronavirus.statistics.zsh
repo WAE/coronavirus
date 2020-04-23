@@ -2,21 +2,6 @@
 # Copyright 2020 (c) all rights reserved by WAE;  see LICENSE  
 # https://wae.github.io/coronavirus hosted courtesy https://pages.github.com
 ################################################################################
-# # To install this script, copy and paste:
-# # ```
-# #    au git wget zsh || apt install git wget zsh #  installs git, wget and zsh with apt or au (https://wae.github.io/au/)
-# # 
-# #    mkdir -p ~/WAE/virus/coronavirus/ #  creates directories
-# # 
-# #    cd ~/WAE/virus/ #  changes working directory
-# # 
-# #    git clone https://github.com/WAE/coronavirus #  clones repository
-# # 
-# #    ~/WAE/virus/coronavirus.statistics.zsh #  lists country names
-# # 
-# #    ~/WAE/virus/coronavirus.statistics.zsh new-zealand uk #  lists statistics
-# # 
-# # ```
 set -eu
 RDR="$HOME/WAE/virus/coronavirus"
 _TERM_() {
@@ -28,20 +13,36 @@ _TERM_() {
 	printf "%s\\n" "	\"egg yolk\" virus"
 	printf "%s\\n" "	\"egg yolk\" virus site:.edu"
 	printf "%s\\n" "	\"egg yolk\" virus site:.gov"
-	printf "%s\\n" "	hydration parvovirus"
+	printf "%s\\n" "	hydration virus"
 	printf "\\n" 
 	unset ARR
+	unset IARR
 	exit
 }
 trap '_TERM_ $LINENO $?' ERR EXIT HUP INT TERM QUIT 
 
 _HELP_() {
-	grep -w "\\#\\ \\#" "$1" | sed "s/\\#\\ \\#\\ //g" 
+	grep -h -e "^\\#\\ \\#" -e "^\\	\\#\\ \\#" "$1" | sed "s/^\\#\\ \\#\\ //g" | sed "s/^\\	\\#\\ \\#\\ //g"  
+	# # To install this script, copy and paste:
+	# # ```
+	# #    au git wget zsh || apt install git wget zsh #  installs git, wget and zsh with apt or au (https://wae.github.io/au/)
+	# # 
+	# #    mkdir -p ~/WAE/virus/covid19/ #  creates directories
+	# # 
+	# #    cd ~/WAE/virus/ #  changes working directory
+	# # 
+	# #    git clone https://github.com/WAE/covid19 #  clones repository
+	# # 
+	# #    ~/WAE/virus/covid19.statistics.zsh #  lists country names
+	# # 
+	# #    ~/WAE/virus/covid19.statistics.zsh new-zealand uk #  lists statistics
+	# # 
+	# # ```
 }
 
 _INSTALLCOMS_() {
-	ISTRING=(git wget zsh)
-	[ ! -z "$(command -v "au")" ] && (au $ISTRING) || (printf "\\e[1;38;5;117m%s\\e[0m\\n" "$STRING1") || [ ! -z "$(command -v apt)" ] && (apt install $ISTRING) || (printf "\\e[1;38;5;117m%s\\e[0m\\n" "$STRING2") 
+	IARR=(git wget zsh)
+	[ ! -z "$(command -v "au")" ] && (au "$IARR") || (printf "\\e[1;38;5;117m%s\\e[0m\\n" "$STRING1") || [ ! -z "$(command -v apt)" ] && (apt install "$IARR") || (printf "\\e[1;38;5;117m%s\\e[0m\\n" "$STRING2") 
 }
 
 _INSTALL_() {
@@ -54,21 +55,22 @@ _INSTALL_() {
 	[ ! -z "$(command -v "zsh")" ] || _INSTALLCOMS_
 	mkdir -p "$RDR" # creates directories
 	cd "$HOME/WAE/virus/" # change working directory
-	git clone https://github.com/WAE/coronavirus || printf "\\e[1;38;5;117m%s\\e[0m\\n" "$STRING3"
+	git clone "$SIAD" || printf "\\e[1;38;5;117m%s\\e[0m\\n" "$STRING3"
 	cd "$RDR"
 	printf "\\e[1;38;5;117m%s\\e[0m\\n" "$RDR setup:  DONE"
 }
 
-[ -d "$RDR" ] && cd "$RDR" || _INSTALL_
 DATE="$(date +%Y%m%d)"
 DATA="https://www.worldometers.info/coronavirus/"
 DATADIR="$RDR/www.worldometers.info/coronavirus/$DATE"
+SIAD="https://github.com/WAE/covid19"
+[ -d "$RDR" ] && cd "$RDR" || _INSTALL_
 [ -h "$RDR/index.html" ] && rm -f "$RDR/index.html"
-[ ! -f "$DATADIR/index.html" ] && [ ! -d "$DATADIR" ] && mkdir -p "$DATADIR" && cd "$DATADIR" && wget $DATA && cd "$RDR"
-[ ! -f "$DATADIR/index.html" ] && cd "$DATADIR" && wget $DATA && cd "$RDR"
+[ ! -f "$DATADIR/index.html" ] && [ ! -d "$DATADIR" ] && mkdir -p "$DATADIR" && cd "$DATADIR" && wget "$DATA" && cd "$RDR"
+[ ! -f "$DATADIR/index.html" ] && cd "$DATADIR" && wget "$DATA" && cd "$RDR"
 [ ! -h "$RDR/index.html" ] && ln -s "$DATADIR/index.html" 
 # # `  echo china > .conf/COUNTRYSTAT ` to change default country output.
-[ -f "$RDR/.conf/COUNTRYNAME" ] && COUNTRYNAME="$(cat $RDR/.conf/COUNTRYNAME)" || COUNTRYNAME="us"
+[ -f "$RDR/.conf/COUNTRYNAME" ] && COUNTRYNAME="$(cat "$RDR/.conf/COUNTRYNAME")" || COUNTRYNAME="us"
 
 _ARR_() {
 	STATKEY=("Country" "Total Cases" "New Cases" "Total Deaths" "New Deaths" "Total Recovered" "Active Cases" "Serious, Critical" "Tot Cases/ 1M pop" "Deaths/ 1M pop" "Total Tests" "Tests/ 1M pop")
@@ -104,7 +106,7 @@ _DARR_() {
 
 _COCO_() {
 	ARR=($(grep "ref=\"country/" index.html | grep -oP '(?<=ref="country/).*(?=/")' | sort | uniq ))
-	for NAMES in "$(printf "%s\\n" ${ARR[@]})"
+	for NAMES in "$(printf "%s\\n" "${ARR[@]}")"
 	do 
 		printf "%s\\n" "$NAMES"
 	done
@@ -116,7 +118,7 @@ _CONCO_() {
 }
 
 [ -z "${1:-}" ] && _CONCO_ && exit
-[[ "${1//-}" = [Hh]* ]] && [ -z "${2:-}" ] && _HELP_ $0 && exit
+[[ "${1//-}" = [Hh]* ]] && [ -z "${2:-}" ] && _HELP_ "$0" && exit
 _ARR_
 [ ! -z "${1:-}" ] && [ ! -z "${2:-}" ] && COUNTRYNAME="$1" && _ARR_ && COUNTRYNAME="$2" && _ARR_ && exit 
 # coronavirus.statistics.zsh EOF
