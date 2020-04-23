@@ -131,7 +131,7 @@ https://nypost.com/2020/04/12/the-coronavirus-can-travel-at-least-13-feet-new-st
 
 > Sweden resisted a lockdown, and its capital Stockholm is expected to reach 'herd immunity' in weeks
 
-https://www.cnbc.com/amp/2020/04/22/no-lockdown-in-sweden-but-stockholm-could-see-herd-immunity-in-weeks.html
+https://www.cnbc.com/2020/04/22/no-lockdown-in-sweden-but-stockholm-could-see-herd-immunity-in-weeks.html
 
 ```
 $ grep -hw SWEDEN output/by.new.spread.*

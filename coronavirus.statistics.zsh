@@ -20,7 +20,7 @@
 set -eu
 RDR="$HOME/WAE/virus/coronavirus"
 _TERM_() {
-	[ -f "$RDR/index.html" ] && rm "$RDR/index.html"
+	[ -h "$RDR/index.html" ] && rm "$RDR/index.html"
 	printf "\\n" 
 	printf "%s\\n" "Related Internet Searches:"
 	printf "%s\\n" "  * coronavirus meter"
@@ -61,8 +61,10 @@ _INSTALL_() {
 [ -d "$RDR" ] && cd "$RDR" || _INSTALL_
 DATA="https://www.worldometers.info/coronavirus/"
 DATE="$(date +%Y%m%d)"
+[ -h "$RDR/index.html" ] && rm -f "$RDR/index.html"
 [ ! -f "$RDR/www.worldometers.info/coronavirus/$DATE/index.html" ] && [ ! -d "$RDR/www.worldometers.info/coronavirus/$DATE/" ] && mkdir -p "$RDR/www.worldometers.info/coronavirus/$DATE" && cd "$RDR/www.worldometers.info/coronavirus/$DATE" && wget $DATA && cd "$RDR"
-[ ! -f "$RDR/index.html" ] && ln -s "$RDR/www.worldometers.info/coronavirus/$DATE/index.html" 
+[ ! -f "$RDR/www.worldometers.info/coronavirus/$DATE/index.html" ] && cd "$RDR/www.worldometers.info/coronavirus/$DATE" && wget $DATA && cd "$RDR"
+[ ! -h "$RDR/index.html" ] && ln -s "$RDR/www.worldometers.info/coronavirus/$DATE/index.html" 
 # # `  echo china > .conf/COUNTRYSTAT ` to change default country output.
 [ -f "$RDR/.conf/COUNTRYNAME" ] && COUNTRYNAME="$(cat $RDR/.conf/COUNTRYNAME)" || COUNTRYNAME="us"
 
