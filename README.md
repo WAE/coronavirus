@@ -133,6 +133,18 @@ https://nypost.com/2020/04/12/the-coronavirus-can-travel-at-least-13-feet-new-st
 
 https://www.cnbc.com/amp/2020/04/22/no-lockdown-in-sweden-but-stockholm-could-see-herd-immunity-in-weeks.html
 
+```
+$ grep -hw SWEDEN output/by.new.spread.*
+89.8814% = SWEDEN 20200409
+89.0822% = SWEDEN 20200410
+88.0569% = SWEDEN 20200411
+88.1646% = SWEDEN 20200412
+85.7153% = SWEDEN 20200418
+85.0890% = SWEDEN 20200419
+85.5857% = SWEDEN 20200421
+85.0953% = SWEDEN 20200422
+```
+
 The following command will attempt to show the current statistics for the default country, Iceland and Norway: 	
 ```
 ~/WAE/virus/covid19/covid19.statistics.zsh iceland norway # lists statistics for the default country, Iceland and Norway 
