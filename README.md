@@ -129,8 +129,12 @@ https://nypost.com/2020/04/12/how-a-bronx-zoo-tiger-was-tested-for-coronavirus/ 
 
 https://nypost.com/2020/04/12/the-coronavirus-can-travel-at-least-13-feet-new-study-shows/
 
+> Sweden resisted a lockdown, and its capital Stockholm is expected to reach 'herd immunity' in weeks
+
+https://www.cnbc.com/amp/2020/04/22/no-lockdown-in-sweden-but-stockholm-could-see-herd-immunity-in-weeks.html
+
 The following command will attempt to show the current statistics for the default country, Iceland and Norway: 	
 ```
-coronavirus.statistics.zsh iceland norway # lists statistics for the default country, Iceland and Norway 
+~/WAE/virus/covid19/covid19.statistics.zsh iceland norway # lists statistics for the default country, Iceland and Norway 
 ```
 <!--coronavirus README.md EOF-->
