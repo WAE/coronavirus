@@ -15,14 +15,13 @@ _TERM_() {
 	printf "%s\\n" "	\"egg yolk\" virus site:.gov"
 	printf "%s\\n" "	hydration virus"
 	printf "\\n" 
-	unset ARR
 	exit
 }
 trap '_TERM_ $LINENO $?' 0 1 2 3 
 
 _HELP_() {
 	grep -h -e "^\\#\\ \\#" -e "^\\	\\#\\ \\#" "$1" | sed "s/^\\#\\ \\#\\ //g" | sed "s/^\\	\\#\\ \\#\\ //g"  
-	# # To install this script, copy and paste:
+	# # To install coronavirus.statistics.sh, copy and paste:
 	# # ```
 	# #    au git wget zsh || apt install git wget zsh #  installs git, wget and zsh with apt or au (https://wae.github.io/au/)
 	# # 
