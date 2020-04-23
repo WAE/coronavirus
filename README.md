@@ -147,6 +147,6 @@ $ grep -hw SWEDEN ~/WAE/virus/coronavirus/output/by.new.spread.*
 
 The following command will attempt to show the current statistics for the default country, Iceland and Norway: 	
 ```
-~/WAE/virus/covid19/covid19.statistics.zsh iceland norway # lists statistics for the default country, Iceland and Norway 
+~/WAE/virus/coronavirus/coronavirus.statistics.zsh iceland norway # lists statistics for the default country, Iceland and Norway 
 ```
 <!--coronavirus README.md EOF-->
