@@ -60,12 +60,13 @@ _INSTALL_() {
 }
 
 [ -d "$RDR" ] && cd "$RDR" || _INSTALL_
-DATA="https://www.worldometers.info/coronavirus/"
 DATE="$(date +%Y%m%d)"
+DATA="https://www.worldometers.info/coronavirus/"
+DATADIR="$RDR/www.worldometers.info/coronavirus/$DATE"
 [ -h "$RDR/index.html" ] && rm -f "$RDR/index.html"
-[ ! -f "$RDR/www.worldometers.info/coronavirus/$DATE/index.html" ] && [ ! -d "$RDR/www.worldometers.info/coronavirus/$DATE/" ] && mkdir -p "$RDR/www.worldometers.info/coronavirus/$DATE" && cd "$RDR/www.worldometers.info/coronavirus/$DATE" && wget $DATA && cd "$RDR"
-[ ! -f "$RDR/www.worldometers.info/coronavirus/$DATE/index.html" ] && cd "$RDR/www.worldometers.info/coronavirus/$DATE" && wget $DATA && cd "$RDR"
-[ ! -h "$RDR/index.html" ] && ln -s "$RDR/www.worldometers.info/coronavirus/$DATE/index.html" 
+[ ! -f "$DATADIR/index.html" ] && [ ! -d "$DATADIR" ] && mkdir -p "$DATADIR" && cd "$DATADIR" && wget $DATA && cd "$RDR"
+[ ! -f "$DATADIR/index.html" ] && cd "$DATADIR" && wget $DATA && cd "$RDR"
+[ ! -h "$RDR/index.html" ] && ln -s "$DATADIR/index.html" 
 # # `  echo china > .conf/COUNTRYSTAT ` to change default country output.
 [ -f "$RDR/.conf/COUNTRYNAME" ] && COUNTRYNAME="$(cat $RDR/.conf/COUNTRYNAME)" || COUNTRYNAME="us"
 
