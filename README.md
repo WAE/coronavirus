@@ -134,7 +134,7 @@ https://nypost.com/2020/04/12/the-coronavirus-can-travel-at-least-13-feet-new-st
 https://www.cnbc.com/2020/04/22/no-lockdown-in-sweden-but-stockholm-could-see-herd-immunity-in-weeks.html
 
 ```
-$ grep -hw SWEDEN output/by.new.spread.*
+$ grep -hw SWEDEN ~/WAE/virus/coronavirus/output/by.new.spread.*
 89.8814% = SWEDEN 20200409
 89.0822% = SWEDEN 20200410
 88.0569% = SWEDEN 20200411

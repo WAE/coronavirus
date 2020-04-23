@@ -25,8 +25,10 @@ _TERM_() {
 	printf "%s\\n" "Related Internet Searches:"
 	printf "%s\\n" "  * coronavirus meter"
 	printf "%s\\n" "  * \"egg yolk\" virus"
+	printf "%s\\n" "  * \"egg yolk\" virus site:.edu"
 	printf "%s\\n" "  * \"egg yolk\" virus site:.gov"
 	printf "%s\\n" "  * hydration virus"
+	printf "%s\\n" "  * hydration virus site:.edu"
 	printf "%s\\n" "  * hydration virus site:.gov"
 	printf "\\n" 
 	unset ARR
