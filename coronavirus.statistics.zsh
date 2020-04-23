@@ -1,7 +1,7 @@
 #!/usr/bin/env zsh
-# Copyright 2020 (c)  all rights reserved by S D Rausty;  see LICENSE  
-# https://sdrausty.github.io hosted courtesy https://pages.github.com
-#####################################################################
+# Copyright 2020 (c) all rights reserved by WAE;  see LICENSE  
+# https://wae.github.io/coronavirus hosted courtesy https://pages.github.com
+################################################################################
 # # To install this script, copy and paste:
 # # ```
 # #    au git wget zsh || apt install git wget zsh #  installs git, wget and zsh with apt or au (https://wae.github.io/au/)
