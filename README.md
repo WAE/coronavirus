@@ -145,6 +145,11 @@ $ grep -hw SWEDEN ~/WAE/virus/coronavirus/output/by.new.spread.*
 85.0953% = SWEDEN 20200422
 ```
 
+> Experts demolish studies suggesting COVID-19 is no worse than flu
+> Authors of widely publicized antibody studies “owe us all an apology,” one expert says.
+
+https://arstechnica.com/science/2020/04/experts-demolish-studies-suggesting-covid-19-is-no-worse-than-flu/
+
 The following command will attempt to show the current statistics for the default country, Iceland and Norway: 	
 ```
 ~/WAE/virus/coronavirus/coronavirus.statistics.zsh iceland norway # lists statistics for the default country, Iceland and Norway 
