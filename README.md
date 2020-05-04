@@ -150,6 +150,18 @@ $ grep -hw SWEDEN ~/WAE/virus/coronavirus/output/by.new.spread.*
 
 https://arstechnica.com/science/2020/04/experts-demolish-studies-suggesting-covid-19-is-no-worse-than-flu/
 
+> 'Happy hypoxia': unusual coronavirus effect baffles doctors
+> It is a mystery that has left doctors questioning the basic tenets of biology: Covid-19 patients who are talking and apparently not in distress, but who have oxygen levels low enough to typically cause unconsciousness or even death.
+
+https://www.theguardian.com/world/2020/may/03/happy-hypoxia-unusual-coronavirus-effect-baffles-doctors
+
+> The mystery of the pandemic's ‘happy hypoxia’
+> Among the many surprises of the new coronavirus is one that seems to defy basic biology: infected patients with extraordinarily low blood-oxygen levels, or hypoxia, scrolling on their phones, chatting with doctors, and generally describing themselves as comfortable. Clinicians call them happy hypoxics.
+
+https://science.sciencemag.org/content/368/6490/455
+
+
+
 The following command will attempt to show the current statistics for the default country, Iceland and Norway: 	
 ```
 ~/WAE/virus/coronavirus/coronavirus.statistics.zsh iceland norway # lists statistics for the default country, Iceland and Norway 

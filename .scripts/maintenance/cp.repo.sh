@@ -15,9 +15,10 @@ _CPREPO_() {
 _HELP_() {
 	grep -w "\\#\\ \\#" "$1" | sed "s/\	\\#\\ \\#//g" 
 	# #
-	# # Run ${0##*/} cp.repo.sh with two arguements as ${0##*/} cp.repo.sh attempts to copy the contents of one git repository into another as follows:
+	# # Run ` cp.repo.sh ` with two arguements as ` cp.repo.sh ` attempts to copy the contents of one git repository into another as follows:
 	grep \$\2 "$1"
+	printf \\n
 }
 
-[ ! -z "${1:-}" ] && [ ! -z "${2:-}" ] && _CPREPO_ || _HELP_ "${0##*/}" 
+[ ! -z "${1:-}" ] && [ ! -z "${2:-}" ] && _CPREPO_ || _HELP_ "$0" 
 # cp.repo.sh EOF
