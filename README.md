@@ -146,24 +146,31 @@ $ grep -hw SWEDEN ~/WAE/virus/coronavirus/output/by.new.spread.*
 ```
 
 > Experts demolish studies suggesting COVID-19 is no worse than flu
+
 > Authors of widely publicized antibody studies “owe us all an apology,” one expert says.
 
 https://arstechnica.com/science/2020/04/experts-demolish-studies-suggesting-covid-19-is-no-worse-than-flu/
 
 > 'Happy hypoxia': unusual coronavirus effect baffles doctors
+
 > It is a mystery that has left doctors questioning the basic tenets of biology: Covid-19 patients who are talking and apparently not in distress, but who have oxygen levels low enough to typically cause unconsciousness or even death.
 
 https://www.theguardian.com/world/2020/may/03/happy-hypoxia-unusual-coronavirus-effect-baffles-doctors
 
 > The mystery of the pandemic's ‘happy hypoxia’
+
 > Among the many surprises of the new coronavirus is one that seems to defy basic biology: infected patients with extraordinarily low blood-oxygen levels, or hypoxia, scrolling on their phones, chatting with doctors, and generally describing themselves as comfortable. Clinicians call them happy hypoxics.
 
 https://science.sciencemag.org/content/368/6490/455
 
 > HEALTH AND SCIENCE
+
 > The coronavirus has mutated and appears to be more contagious now, new study finds
+
 > The study has yet to be peer-reviewed, but the researchers noted that news of the mutation was of "urgent concern" considering the more than 100 vaccines in the process of being developed to prevent Covid-19.
+
 > To date, the researchers have identified 14 mutations. 
+
 https://www.cnbc.com/2020/05/05/the-coronavirus-mutated-and-appears-to-be-more-contagious-now-new-study-finds.html
 
 The following command will attempt to show the current statistics for the default country, Iceland and Norway: 	
