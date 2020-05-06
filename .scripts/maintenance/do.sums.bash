@@ -30,7 +30,7 @@ _DOSUMSBASH_ () {
 	done
 	git add .
 	SN="$(sn.sh)" # sn.sh is found in https://github.com/BuildAPKs/maintenance.BuildAPKs/blob/master/sn.sh
-	[[ -z "${1:-}" ]] &&  git commit -m "$SN" || [[ "${1//-}" = [Ss]* ]] && git commit -a -S -m "$SN" || printf "%s\\n" "Run ${0##*/} with option s[igned] to sign a commit with gpg;  EXITING..." && exit
+	[[ -z "${1:-}" ]] &&  git commit -m "$SN" || ( [[ "${1//-}" = [Ss]* ]] && git commit -a -S -m "$SN" ) || ( printf "%s\\n" "Run ${0##*/} with option s[igned] to sign a commit with gpg;  EXITING..." && exit )
 	git push
 	ls
 	printf "%s\\n" "$PWD"
