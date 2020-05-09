@@ -196,6 +196,24 @@ $ head output/by.new.mortality.20200509.md
 $ grep -in -e  US  -e  CHINA  output/by.new.mortality.20200509.md
 63:5.6036% = CHINA 20200509 
 155:26.0000% = US 20200509 
+$ grep -h  US  output/by.new.mortality.202005*
+29.0889% = US 20200501 
+28.9402% = US 20200502 
+28.1056% = US 20200503 
+27.7434% = US 20200504 
+26.4658% = US 20200506 
+26.7639% = US 20200507 
+26.5631% = US 20200508 
+26.0000% = US 20200509 
+$ grep -h  US  output/by.new.spread.202005*
+79.9552% = US 20200501 
+79.9148% = US 20200502 
+79.6630% = US 20200503 
+79.4688% = US 20200504 
+77.9441% = US 20200506 
+77.7659% = US 20200507 
+77.6424% = US 20200508 
+77.1580% = US 20200509 
 ```
 
 The following command will attempt to show the current statistics for the default country, Iceland and Norway: 	
