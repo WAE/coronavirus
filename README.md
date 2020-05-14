@@ -182,7 +182,7 @@ https://www.cnbc.com/2020/05/05/the-coronavirus-mutated-and-appears-to-be-more-c
 https://medicalxpress.com/news/2020-05-covid-death.html
 
 ```
-$ head output/by.new.mortality.20200509.md
+$ head ~/WAE/virus/coronavirus/output/by.new.mortality.20200509.md
 0.0000% = CARIBBEAN-NETHERLANDS 20200509 
 0.0000% = SAINT-PIERRE-AND-MIQUELON 20200509 
 0.3628% = DJIBOUTI 20200509 
@@ -193,10 +193,10 @@ $ head output/by.new.mortality.20200509.md
 0.5684% = QATAR 20200509 
 0.7519% = BRUNEI-DARUSSALAM 20200509 
 0.8333% = FRENCH-GUIANA 20200509 
-$ grep -in -e  US  -e  CHINA  output/by.new.mortality.20200509.md
+$ grep -in -e " US " -e " CHINA " ~/WAE/virus/coronavirus/output/by.new.mortality.20200509.md
 63:5.6036% = CHINA 20200509 
 155:26.0000% = US 20200509 
-$ grep -h  US  output/by.new.mortality.202005*
+$ grep -h " US " ~/WAE/virus/coronavirus/output/by.new.mortality.202005*
 29.0889% = US 20200501 
 28.9402% = US 20200502 
 28.1056% = US 20200503 
@@ -205,15 +205,22 @@ $ grep -h  US  output/by.new.mortality.202005*
 26.7639% = US 20200507 
 26.5631% = US 20200508 
 26.0000% = US 20200509 
-$ grep -h  US  output/by.new.spread.202005*
-79.9552% = US 20200501 
-79.9148% = US 20200502 
-79.6630% = US 20200503 
-79.4688% = US 20200504 
-77.9441% = US 20200506 
-77.7659% = US 20200507 
-77.6424% = US 20200508 
-77.1580% = US 20200509 
+```
+
+> Leaked White House data shows infections spiking more than 1,000% in rural areas that backed Trump
+
+> "Anybody that claims we're on a downward trajectory nationally is out of touch with reality," Dr. Irwin Redlener, the director of the Columbia University National Center for Disaster Preparedness, told NBC News, adding that even the rising numbers do not tell the full story. 
+
+https://www.salon.com/2020/05/12/leaked-white-house-data-shows-infections-spiking-more-than-1000-in-rural-areas-that-backed-trump/
+
+```
+$ grep -h " US " ~/WAE/virus/coronavirus/output/by.new.spread.20200{4,5}{10..12}*
+90.9159% = US 20200410 
+90.9990% = US 20200411 
+90.7458% = US 20200412 
+76.7096% = US 20200510 
+75.3993% = US 20200511 
+74.5362% = US 20200512 
 ```
 
 The following command will attempt to show the current statistics for the default country, Iceland and Norway: 	
