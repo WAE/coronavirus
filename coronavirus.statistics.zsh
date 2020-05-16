@@ -5,7 +5,6 @@
 set -eu
 RDR="$HOME/WAE/virus/coronavirus"
 _TERM_() {
-	[ -h "$RDR/index.html" ] && rm "$RDR/index.html"
 	printf "\\n" 
 	printf "%s\\n" "Related Internet Searches:"
 	printf "%s\\n" "	coronavirus meter"
@@ -69,13 +68,12 @@ SIAD="https://github.com/WAE/covid19"
 [ -h "$RDR/index.html" ] && rm -f "$RDR/index.html"
 [ ! -f "$DATADIR/index.html" ] && [ ! -d "$DATADIR" ] && mkdir -p "$DATADIR" && cd "$DATADIR" && wget "$DATA" && cd "$RDR"
 [ ! -f "$DATADIR/index.html" ] && cd "$DATADIR" && wget "$DATA" && cd "$RDR"
-[ ! -h "$RDR/index.html" ] && ln -s "$DATADIR/index.html" 
 # #    echo china > ~/WAE/virus/.conf/COUNTRYSTAT	#  change default country
 [ -f "$RDR/.conf/COUNTRYNAME" ] && COUNTRYNAME="$(cat "$RDR/.conf/COUNTRYNAME")" || COUNTRYNAME="us"
 
 _ARR_() {
 	STATKEY=("Country" "Total Cases" "New Cases" "Total Deaths" "New Deaths" "Total Recovered" "Active Cases" "Serious, Critical" "Tot Cases/ 1M pop" "Deaths/ 1M pop" "Total Tests" "Tests/ 1M pop")
-	INDEX="$(awk '{gsub("\"></td>", "\">0</td>", $0); print}' index.html)"
+	INDEX="$(awk '{gsub("\"></td>", "\">0</td>", $0); print}' $DATADIR/index.html)"
 	COUNTRYSTAT=($(grep -iA 12 "ref=\"country/$COUNTRYNAME/" <<< "$INDEX" | grep -oP '(?<=">).*(?=</td)' | grep -v class | head -n 11 | sed 's/+//g' | sed 's/,//g' ))
 	[ "${COUNTRYSTAT[5]}" = "N/A" ] && printf "\\n%s\\n\\n" "WARNING:  Statistics for $COUNTRYNAME:u $DATE are not available;  Continuing..." && _DARR_ || _CARR_
 }
