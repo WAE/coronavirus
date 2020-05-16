@@ -14,7 +14,7 @@ _TERM_() {
 	printf "%s\\n" "	\"egg yolk\" virus site:.gov"
 	printf "%s\\n" "	hydration virus"
 	printf "\\n" 
-	unset ARR
+	unset ARR INDEX
 	exit
 }
 trap '_TERM_ $LINENO $?' ERR EXIT HUP INT TERM QUIT 
@@ -103,7 +103,7 @@ _DARR_() {
 }
 
 _CONCO_() {
-	ARR=($(grep "ref=\"country/" "$DATADIR"/index.html | grep -oP '(?<=ref="country/).*(?=/")' | sort | uniq ))
+	ARR=($(grep "ref=\"country/" "$DATADIR/index.html" | grep -oP '(?<=ref="country/).*(?=/")' | sort | uniq ))
 	for NAMES in "$(printf "%s\\n" "${ARR[@]}")"
 	do 
 		printf "%s\\n" "$NAMES"
