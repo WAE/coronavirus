@@ -25,19 +25,20 @@ _HELP_() {
 	grep -h -e "^\\#\\ \\#" -e "^\\	\\#\\ \\#" "$1" | sed "s/^\\#\\ \\#\\ //g" | sed "s/^\\	\\#\\ \\#\\ //g"  
 	# # To install this script, copy and paste:
 	# # ```
-	# #    au git wget zsh || apt install git wget zsh #  installs git, wget and zsh with apt or au (https://wae.github.io/au/)
+	# #    au git wget zsh || apt install git wget zsh	#  install git, wget and zsh with au or apt (https://wae.github.io/au/)
 	# # 
-	# #    mkdir -p ~/WAE/virus/covid19/ #  creates directories
+	# #    mkdir -p ~/WAE/virus/covid19/	#  create directories
 	# # 
-	# #    cd ~/WAE/virus/ #  changes working directory
+	# #    cd ~/WAE/virus/			#  change working directory
 	# # 
-	# #    git clone https://github.com/WAE/covid19 #  clones repository
-	# # 
-	# #    ~/WAE/virus/covid19.statistics.zsh #  lists country names
-	# # 
-	# #    ~/WAE/virus/covid19.statistics.zsh new-zealand uk #  lists statistics
+	# #    git clone https://github.com/WAE/covid19	#  clone git repository
 	# # 
 	# # ```
+	# # 
+	# #    ~/WAE/virus/covid19.statistics.zsh		#  list country names
+	# # 
+	# #    ~/WAE/virus/covid19.statistics.zsh new-zealand uk	#  list statistics
+	# # 
 }
 
 _INSTALLCOMS_() {
@@ -69,7 +70,7 @@ SIAD="https://github.com/WAE/covid19"
 [ ! -f "$DATADIR/index.html" ] && [ ! -d "$DATADIR" ] && mkdir -p "$DATADIR" && cd "$DATADIR" && wget "$DATA" && cd "$RDR"
 [ ! -f "$DATADIR/index.html" ] && cd "$DATADIR" && wget "$DATA" && cd "$RDR"
 [ ! -h "$RDR/index.html" ] && ln -s "$DATADIR/index.html" 
-# # `  echo china > .conf/COUNTRYSTAT ` to change default country output.
+# #    echo china > ~/WAE/virus/.conf/COUNTRYSTAT	#  change default country
 [ -f "$RDR/.conf/COUNTRYNAME" ] && COUNTRYNAME="$(cat "$RDR/.conf/COUNTRYNAME")" || COUNTRYNAME="us"
 
 _ARR_() {
@@ -104,21 +105,17 @@ _DARR_() {
 	printf "%s\\n" "Coronavirus data retrieved from $DATA on $DATE."
 }
 
-_COCO_() {
+_CONCO_() {
 	ARR=($(grep "ref=\"country/" index.html | grep -oP '(?<=ref="country/).*(?=/")' | sort | uniq ))
 	for NAMES in "$(printf "%s\\n" "${ARR[@]}")"
 	do 
 		printf "%s\\n" "$NAMES"
 	done
-}
-
-_CONCO_() {
-	_COCO_
 	printf "%s\\n" "${#ARR[@]}"
 }
 
 [ -z "${1:-}" ] && _CONCO_ && exit
 [[ "${1//-}" = [Hh]* ]] && [ -z "${2:-}" ] && _HELP_ "$0" && exit
 _ARR_
-[ ! -z "${1:-}" ] && [ ! -z "${2:-}" ] && COUNTRYNAME="$1" && _ARR_ && COUNTRYNAME="$2" && _ARR_ && exit 
+[ -n "${1:-}" ] && [ -n "${2:-}" ] && COUNTRYNAME="$1" && _ARR_ && COUNTRYNAME="$2" && _ARR_
 # coronavirus.statistics.zsh EOF

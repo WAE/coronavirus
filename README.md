@@ -221,6 +221,13 @@ $ grep -h " US " ~/WAE/virus/coronavirus/output/by.new.spread.20200{4,5}{10..12}
 76.7096% = US 20200510 
 75.3993% = US 20200511 
 74.5362% = US 20200512 
+$ grep -hn " US " ~/WAE/virus/coronavirus/output/by.new.spread.20200{4,5}{10..12}* | sort -g
+172:90.9159% = US 20200410 
+175:74.5362% = US 20200512 
+176:75.3993% = US 20200511 
+178:90.9990% = US 20200411 
+180:76.7096% = US 20200510 
+186:90.7458% = US 20200412 
 ```
 
 The following command will attempt to show the current statistics for the default country, Iceland and Norway: 	
