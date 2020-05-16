@@ -65,7 +65,6 @@ DATA="https://www.worldometers.info/coronavirus/"
 DATADIR="$RDR/www.worldometers.info/coronavirus/$DATE"
 SIAD="https://github.com/WAE/covid19"
 [ -d "$RDR" ] && cd "$RDR" || _INSTALL_
-[ -h "$RDR/index.html" ] && rm -f "$RDR/index.html"
 [ ! -f "$DATADIR/index.html" ] && [ ! -d "$DATADIR" ] && mkdir -p "$DATADIR" && cd "$DATADIR" && wget "$DATA" && cd "$RDR"
 [ ! -f "$DATADIR/index.html" ] && cd "$DATADIR" && wget "$DATA" && cd "$RDR"
 # #    echo china > ~/WAE/virus/.conf/COUNTRYSTAT	#  change default country
@@ -104,7 +103,7 @@ _DARR_() {
 }
 
 _CONCO_() {
-	ARR=($(grep "ref=\"country/" index.html | grep -oP '(?<=ref="country/).*(?=/")' | sort | uniq ))
+	ARR=($(grep "ref=\"country/" "$DATADIR"/index.html | grep -oP '(?<=ref="country/).*(?=/")' | sort | uniq ))
 	for NAMES in "$(printf "%s\\n" "${ARR[@]}")"
 	do 
 		printf "%s\\n" "$NAMES"
