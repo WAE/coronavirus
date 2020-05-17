@@ -5,7 +5,7 @@
 ##### -r--r--r-- [coronavirus.statistics.zsh](https://raw.githubusercontent.com/WAE/coronavirus/master/coronavirus.statistics.zsh)
 ##### -rwxrwxrwx [coronavirus.statistics.zsh](https://wae.github.io/coronavirus/coronavirus.statistics.zsh)
 
-[This repository](https://github.com/WAE/coronavirus) is a submodule for [WAE/virus](https://github.com/WAE/virus).  In order to install it in its' proper place on a smartphone, tablet and TV, run [setup.coronavirus.statistics.sh](https://raw.githubusercontent.com/WAE/coronavirus/master/scripts/setup.coronavirus.statistics.sh) after downloading.  Tap this link to download [setup.coronavirus.statistics.sh](https://wae.github.io/coronavirus/scripts/setup.coronavirus.statistics.sh).  Alternatively, copy and paste the following into [Termux](https://github.com/termux) on smartphone, tablet and werable:
+[This repository](https://github.com/WAE/coronavirus) is a submodule for [WAE/virus](https://github.com/WAE/virus).  In order to install it in its' proper place on a smartphone, tablet and TV, run [setup.coronavirus.statistics.sh](https://raw.githubusercontent.com/WAE/coronavirus/master/scripts/setup.coronavirus.statistics.sh) after downloading.  Tap this link to download [setup.coronavirus.statistics.sh](https://wae.github.io/coronavirus/scripts/setup.coronavirus.statistics.sh).  Alternatively, copy and paste the following into [Termux](https://github.com/termux) on smartphone, tablet, TV and wearable:
 
 ```
    au git wget zsh || apt install git wget zsh # install git wget and zsh
@@ -228,7 +228,7 @@ $ grep -hn " US " ~/WAE/virus/coronavirus/output/by.new.spread.20200{4,5}{10..12
 This command shows the current statistics for [the default country](https://github.com/WAE/coronavirus/blob/master/.conf/COUNTRYNAME), Iceland and Norway: 	
 
 ```
-~/WAE/virus/coronavirus/coronavirus.statistics.zsh iceland norway # lists statistics for the default country, Iceland and Norway 
+~/WAE/virus/coronavirus/coronavirus.statistics.zsh iceland norway # list statistics for the default country, Iceland and Norway 
 ```
 
 <!--coronavirus README.md EOF-->
