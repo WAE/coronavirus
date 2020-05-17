@@ -18,7 +18,7 @@
 
    ~/WAE/virus/coronavirus/coronavirus.statistics.zsh new-zealand uk # list statistics
 ```
-Run this command to see all available country names:
+This command will show all available country names:
 ```
    ~/WAE/virus/coronavirus/coronavirus.statistics.zsh
 ```
@@ -225,7 +225,7 @@ $ grep -hn " US " ~/WAE/virus/coronavirus/output/by.new.spread.20200{4,5}{10..12
 186:90.7458% = US 20200412 
 ```
 
-This command will attempt to show the current statistics for [the default country](https://github.com/WAE/coronavirus/blob/master/.conf/COUNTRYNAME), Iceland and Norway: 	
+This command shows the current statistics for [the default country](https://github.com/WAE/coronavirus/blob/master/.conf/COUNTRYNAME), Iceland and Norway: 	
 
 ```
 ~/WAE/virus/coronavirus/coronavirus.statistics.zsh iceland norway # lists statistics for the default country, Iceland and Norway 
