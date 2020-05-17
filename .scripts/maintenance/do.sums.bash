@@ -35,5 +35,5 @@ _DOSUMSBASH_ () {
 	ls
 	printf "%s\\n" "$PWD"
 }
-[ "${PWD##*/}" = coronavirus ] && _DOSUMSBASH_ || printf "%s\\n" "Run ${0##*/} in git repository root directory;  EXITING..." 
+[ "${PWD##*/}" = coronavirus ] && _DOSUMSBASH_ "$@"|| printf "%s\\n" "Run ${0##*/} in git repository root directory;  EXITING..." 
 # do.sums.bash EOF
