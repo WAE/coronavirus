@@ -23,19 +23,19 @@ _HELP_() {
 	grep -h -e "^\\#\\ \\#" -e "^\\	\\#\\ \\#" "$1" | sed "s/^\\#\\ \\#\\ //g" | sed "s/^\\	\\#\\ \\#\\ //g"  
 	# # To install this script, copy and paste:
 	# # ```
-	# #    au git wget zsh || apt install git wget zsh	#  install git, wget and zsh with au or apt (https://wae.github.io/au/)
+	# #    au git wget zsh || apt install git wget zsh	#  install git, wget and zsh with au (https://wae.github.io/au/) and apt (https://salsa.debian.org/apt-team/apt)
 	# # 
-	# #    mkdir -p ~/WAE/virus/covid19/	#  create directories
+	# #    mkdir -p ~/WAE/virus/coronavirus/	#  create directories
 	# # 
 	# #    cd ~/WAE/virus/			#  change working directory
 	# # 
-	# #    git clone https://github.com/WAE/covid19	#  clone git repository
+	# #    git clone https://github.com/WAE/coronavirus	#  clone git repository
 	# # 
 	# # ```
 	# # 
-	# #    ~/WAE/virus/covid19.statistics.zsh		#  list country names
+	# #    ~/WAE/virus/coronavirus.statistics.zsh	#  list countries
 	# # 
-	# #    ~/WAE/virus/covid19.statistics.zsh new-zealand uk	#  list statistics
+	# #    ~/WAE/virus/coronavirus.statistics.zsh new-zealand uk	#  list statistics
 	# # 
 }
 
@@ -63,7 +63,7 @@ _INSTALL_() {
 DATE="$(date +%Y%m%d)"
 DATA="https://www.worldometers.info/coronavirus/"
 DATADIR="$RDR/www.worldometers.info/coronavirus/$DATE"
-SIAD="https://github.com/WAE/covid19"
+SIAD="https://github.com/WAE/coronavirus"
 [ -d "$RDR" ] && cd "$RDR" || _INSTALL_
 [ ! -f "$DATADIR/index.html" ] && [ ! -d "$DATADIR" ] && mkdir -p "$DATADIR" && cd "$DATADIR" && wget "$DATA" && cd "$RDR"
 [ ! -f "$DATADIR/index.html" ] && cd "$DATADIR" && wget "$DATA" && cd "$RDR"
@@ -108,7 +108,7 @@ _CONCO_() {
 	do 
 		printf "%s\\n" "$NAMES"
 	done
-	printf "%s\\n" "${#ARR[@]}"
+	printf "\\n%s\\n" "Worldwide, ${#ARR[@]} countries have registered coronavirus virus pandemic cases as of $(date +%A\,\ %B\ %d\ %Y)."
 }
 
 [ -z "${1:-}" ] && _CONCO_ && exit
