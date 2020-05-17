@@ -1,28 +1,26 @@
 <link rel="prerender" href="https://github.com/WAE/coronavirus">
 
-## [WAE.virus.coronavirus](https://github.com/WAE/coronavirus)
+## [WAE/virus/coronavirus](https://github.com/WAE/coronavirus)
 
 ##### -r--r--r-- [coronavirus.statistics.zsh](https://raw.githubusercontent.com/WAE/coronavirus/master/coronavirus.statistics.zsh)
 ##### -rwxrwxrwx [coronavirus.statistics.zsh](https://wae.github.io/coronavirus/coronavirus.statistics.zsh)
 
-[This repository](https://github.com/WAE/coronavirus) is a submodule for [WAE.virus](https://github.com/WAE/virus).  In order to install it in its' proper place on a smartphone, tablet an TV, run [coronavirus.statistics.zsh](https://raw.githubusercontent.com/WAE/coronavirus/master/coronavirus.statistics.zsh) after downloading.  Alternatively, copy and paste the following into [Termux](https://github.com/termux):
+[This repository](https://github.com/WAE/coronavirus) is a submodule for [WAE/virus](https://github.com/WAE/virus).  In order to install it in its' proper place on a smartphone, tablet and TV, run [setup.coronavirus.statistics.sh](https://raw.githubusercontent.com/WAE/coronavirus/master/scripts/setup.coronavirus.statistics.sh) after downloading.  Tap this link to download [setup.coronavirus.statistics.sh](https://wae.github.io/coronavirus/scripts/setup.coronavirus.statistics.sh).  Alternatively, copy and paste the following into [Termux](https://github.com/termux) on smartphone, tablet and werable:
 
 ```
-   au git wget zsh || apt install git wget zsh # installs git wget and zsh
+   au git wget zsh || apt install git wget zsh # install git wget and zsh
 
-   mkdir -p ~/WAE/virus/coronavirus/ # creates directories
+   mkdir -p ~/WAE/virus/coronavirus/ # create directories
 
    cd ~/WAE/virus/
 
-   git clone https://github.com/WAE/coronavirus # clones repository
+   git clone https://github.com/WAE/coronavirus # clone repository
 
-   cd ~/WAE/virus/coronavirus
-
-   coronavirus.statistics.zsh new-zealand uk # lists statistics
+   ~/WAE/virus/coronavirus/coronavirus.statistics.zsh new-zealand uk # list statistics
 ```
 Run this command to see all available country names:
 ```
-   coronavirus.statistics.zsh
+   ~/WAE/virus/coronavirus/coronavirus.statistics.zsh
 ```
 [![Screenshot_20200408-062343.png](https://github.com/WAE/coronavirus/raw/master/docs/images/Screenshot_20200408-062343.png)](https://github.com/WAE/coronavirus/raw/master/docs/images/Screenshot_20200408-062343.png)
 
@@ -101,17 +99,14 @@ https://www.cnn.com/travel/amp/private-jet-turned-back-cannes-france/index.html 
 
 Countries mentioned in private jet article:
 
+```
 4.9763% = GERMANY 20200411 NEW MORTALITY RATE (0.0000% is ideal)
-
 6.1047% = CROATIA 20200411 NEW MORTALITY RATE (0.0000% is ideal)
-
 29.1589% = ROMANIA 20200411 NEW MORTALITY RATE (0.0000% is ideal)
-
 35.4080% = FRANCE 20200411 NEW MORTALITY RATE (0.0000% is ideal)
-
 49.3590% = UKRAINE 20200411 NEW MORTALITY RATE (0.0000% is ideal)
-	
 96.9109% = UK 20200411 NEW MORTALITY RATE (0.0000% is ideal)
+```
 
 > #### NASA data reveals air pollution in northeast areas of the US have dropped by 30 percent as millions are under lockdown due to the coronavirus pandemic
 
@@ -230,8 +225,10 @@ $ grep -hn " US " ~/WAE/virus/coronavirus/output/by.new.spread.20200{4,5}{10..12
 186:90.7458% = US 20200412 
 ```
 
-The following command will attempt to show the current statistics for [the default country](https://github.com/WAE/coronavirus/blob/master/.conf/COUNTRYNAME), Iceland and Norway: 	
+This command will attempt to show the current statistics for [the default country](https://github.com/WAE/coronavirus/blob/master/.conf/COUNTRYNAME), Iceland and Norway: 	
+
 ```
-~/WAE/virus/covid19/covid19.statistics.zsh iceland norway # lists statistics for the default country, Iceland and Norway 
+~/WAE/virus/coronavirus/coronavirus.statistics.zsh iceland norway # lists statistics for the default country, Iceland and Norway 
 ```
+
 <!--coronavirus README.md EOF-->

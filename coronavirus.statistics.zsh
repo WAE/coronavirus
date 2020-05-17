@@ -27,13 +27,13 @@ _HELP_() {
 	# # 
 	# #    mkdir -p ~/WAE/virus/coronavirus/	#  create directories
 	# # 
-	# #    cd ~/WAE/virus/			#  change working directory
+	# #    cd ~/WAE/virus/				#  change working directory
 	# # 
 	# #    git clone https://github.com/WAE/coronavirus	#  clone git repository
 	# # 
 	# # ```
 	# # 
-	# #    ~/WAE/virus/coronavirus.statistics.zsh	#  list countries
+	# #    ~/WAE/virus/coronavirus.statistics.zsh		#  list countries
 	# # 
 	# #    ~/WAE/virus/coronavirus.statistics.zsh new-zealand uk	#  list statistics
 	# # 
@@ -81,13 +81,13 @@ _CARR_() {
 	printf "\\n%s\\n" "$COUNTRYNAME:u $DATE Coronavirus Pandemic Statistics:"
 	DENOM="$((${COUNTRYSTAT[3]}+${COUNTRYSTAT[5]}))"
 	printf "%0.4f%s\\n" "$(((${COUNTRYSTAT[3]}/$DENOM.)*100))" "% = $COUNTRYNAME:u $DATE OLD MORTALITY % RATE (0.0000% is ideal) = ( ${STATKEY[4]} ) / ( ${STATKEY[4]} + ${STATKEY[6]} )"
- 	NUMER="$((${COUNTRYSTAT[3]}+${COUNTRYSTAT[4]}))"
+ 	CONTIN="$((${COUNTRYSTAT[3]}+${COUNTRYSTAT[4]}))"
  	DENOM="$((${COUNTRYSTAT[3]}+${COUNTRYSTAT[4]}+${COUNTRYSTAT[5]}))"
-	printf "%0.4f%s\\n" "$((($NUMER/$DENOM.)*100))" "% = $COUNTRYNAME:u $DATE NEW MORTALITY % RATE (0.0000% is ideal) = ( ${STATKEY[5]} + ${STATKEY[4]} ) / ( ${STATKEY[5]} + ${STATKEY[4]} + ${STATKEY[6]} )"
+	printf "%0.4f%s\\n" "$((($CONTIN/$DENOM.)*100))" "% = $COUNTRYNAME:u $DATE NEW MORTALITY % RATE (0.0000% is ideal) = ( ${STATKEY[5]} + ${STATKEY[4]} ) / ( ${STATKEY[5]} + ${STATKEY[4]} + ${STATKEY[6]} )"
 	printf "%0.4f%s\\n" "$(((${COUNTRYSTAT[6]}/${COUNTRYSTAT[1]}.)*100))" "% = $COUNTRYNAME:u $DATE OLD SPREAD % RATE (0.0000% is ideal) = ( ${STATKEY[7]} ) / ( ${STATKEY[2]} )"
- 	NUMER="$((${COUNTRYSTAT[2]}+${COUNTRYSTAT[6]}))"
+ 	CONTIN="$((${COUNTRYSTAT[2]}+${COUNTRYSTAT[6]}))"
  	DENOM="$((${COUNTRYSTAT[2]}+${COUNTRYSTAT[1]}))"
-	printf "%0.4f%s\\n" "$((($NUMER/$DENOM.)*100))" "% = $COUNTRYNAME:u $DATE NEW SPREAD % RATE (0.0000% is ideal) = ( ${STATKEY[3]} + ${STATKEY[7]} ) / ( ${STATKEY[3]} + ${STATKEY[2]} )"
+	printf "%0.4f%s\\n" "$((($CONTIN/$DENOM.)*100))" "% = $COUNTRYNAME:u $DATE NEW SPREAD % RATE (0.0000% is ideal) = ( ${STATKEY[3]} + ${STATKEY[7]} ) / ( ${STATKEY[3]} + ${STATKEY[2]} )"
 	_DARR_
 }
 
@@ -108,7 +108,7 @@ _CONCO_() {
 	do 
 		printf "%s\\n" "$NAMES"
 	done
-	printf "\\n%s\\n" "Worldwide, ${#ARR[@]} countries have registered coronavirus virus pandemic cases as of $(date +%A\,\ %B\ %d\ %Y)."
+	printf "\\n%s\\n" "Worldwide ${#ARR[@]} countries have registered coronavirus virus pandemic cases as of $(date +%A\,\ %B\ %d\ %Y)."
 }
 
 [ -z "${1:-}" ] && _CONCO_ && exit
