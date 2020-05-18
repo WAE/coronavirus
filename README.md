@@ -266,6 +266,24 @@ $ grep -hn -e DENMARK -e FAEROE-ISLANDS -e FINLAND -e GREENLAND -e ICELAND -e NO
 208:96.8004% = NORWAY 20200517 
 ```
 
+> #### Dogs could sniff out coronavirus cases at rate of 750 per hour, experts believe
+
+> "There have already been so many fantastic achievements in the dogs' work to detect human disease, and I believe they can be trained to sniff out COVID-19," Guest told the news outlet.
+
+https://www.foxnews.com/science/dogs-could-sniff-coronavirus-cases-750-per-hour-experts-believe 20200518
+
+> #### Dogs are now being trained to smell coronavirus in US patients
+
+> Dr. Guest also estimated dogs could sniff out as many as 750 people per hour, significantly aiding in the testing capabilities throughout the world.
+
+https://www.foxnews.com/science/dogs-trained-smell-coronavirus-in-us-patients 20200518
+
+> #### Trial for dogs to sniff out COVID-19 in UK starts
+
+> “Bio-detection dogs already detect specific cancers and we believe this innovation might provide speedy results as part of our wider testing strategy," Minister for Innovation Lord Bethell said in a statement. “Accuracy is essential so this trial will tell us whether ‘COVID dogs’ can reliably detect the virus and stop it spreading.”
+
+https://www.foxnews.com/science/trial-dogs-sniff-covid-19-uk-starts 20200518
+
 This command shows the current statistics for [the default country](https://github.com/WAE/coronavirus/blob/master/.conf/COUNTRYNAME), Iceland and Norway: 	
 
 ```
