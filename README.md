@@ -232,7 +232,7 @@ $ grep -hn " US " ~/WAE/virus/coronavirus/output/by.new.spread.20200{4,5}{10..12
 https://www.nytimes.com/interactive/2020/05/15/world/europe/sweden-coronavirus-deaths.html 20200517
 
 ```
-$ grep -hn -e DENMARK -e FAEROE-ISLANDS -e FINLAND -e GREENLAND -e ICELAND -e NORWAY -e SWEDEN /data/data/com.termux/files/home/WAE/virus/coronavirus/output/by.new.mortality.20200409.md
+$ grep -hn -e DENMARK -e FAEROE-ISLANDS -e FINLAND -e GREENLAND -e ICELAND -e NORWAY -e SWEDEN ~/WAE/virus/coronavirus/output/by.new.mortality.20200409.md
 24:0.8646% = ICELAND 20200409 
 87:12.7907% = FINLAND 20200409 
 88:12.8514% = DENMARK 20200409 
@@ -240,7 +240,7 @@ $ grep -hn -e DENMARK -e FAEROE-ISLANDS -e FINLAND -e GREENLAND -e ICELAND -e NO
 190:78.2313% = NORWAY 20200409 
 193:81.4312% = SWEDEN 20200409 
 204:100.0000% = GREENLAND 20200409 
-$ grep -hn -e DENMARK -e FAEROE-ISLANDS -e FINLAND -e GREENLAND -e ICELAND -e NORWAY -e SWEDEN /data/data/com.termux/files/home/WAE/virus/coronavirus/output/by.new.mortality.20200517.md
+$ grep -hn -e DENMARK -e FAEROE-ISLANDS -e FINLAND -e GREENLAND -e ICELAND -e NORWAY -e SWEDEN ~/WAE/virus/coronavirus/output/by.new.mortality.20200517.md
 7:0.5568% = ICELAND 20200517 
 77:5.6351% = DENMARK 20200517 
 78:5.6426% = FINLAND 20200517 
@@ -248,7 +248,7 @@ $ grep -hn -e DENMARK -e FAEROE-ISLANDS -e FINLAND -e GREENLAND -e ICELAND -e NO
 189:87.8788% = NORWAY 20200517 
 201:100.0000% = FAEROE-ISLANDS 20200517 
 203:100.0000% = GREENLAND 20200517 
-$ grep -hn -e DENMARK -e FAEROE-ISLANDS -e FINLAND -e GREENLAND -e ICELAND -e NORWAY -e SWEDEN /data/data/com.termux/files/home/WAE/virus/coronavirus/output/by.new.spread.20200409.md
+$ grep -hn -e DENMARK -e FAEROE-ISLANDS -e FINLAND -e GREENLAND -e ICELAND -e NORWAY -e SWEDEN ~/WAE/virus/coronavirus/output/by.new.spread.20200409.md
 11:0.0000% = FAEROE-ISLANDS 20200409 
 15:0.0000% = GREENLAND 20200409 
 74:58.6905% = ICELAND 20200409 
@@ -256,7 +256,7 @@ $ grep -hn -e DENMARK -e FAEROE-ISLANDS -e FINLAND -e GREENLAND -e ICELAND -e NO
 147:87.4403% = FINLAND 20200409 
 166:89.8814% = SWEDEN 20200409 
 209:97.7714% = NORWAY 20200409 
-$ grep -hn -e DENMARK -e FAEROE-ISLANDS -e FINLAND -e GREENLAND -e ICELAND -e NORWAY -e SWEDEN /data/data/com.termux/files/home/WAE/virus/coronavirus/output/by.new.spread.20200517.md
+$ grep -hn -e DENMARK -e FAEROE-ISLANDS -e FINLAND -e GREENLAND -e ICELAND -e NORWAY -e SWEDEN ~/WAE/virus/coronavirus/output/by.new.spread.20200517.md
 8:0.0000% = FAEROE-ISLANDS 20200517 
 13:0.0000% = GREENLAND 20200517 
 33:0.3330% = ICELAND 20200517 
