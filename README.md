@@ -124,7 +124,7 @@ https://nypost.com/2020/04/12/how-a-bronx-zoo-tiger-was-tested-for-coronavirus/ 
 
 https://nypost.com/2020/04/12/the-coronavirus-can-travel-at-least-13-feet-new-study-shows/
 
-> Sweden resisted a lockdown, and its capital Stockholm is expected to reach 'herd immunity' in weeks
+> #### Sweden resisted a lockdown, and its capital Stockholm is expected to reach 'herd immunity' in weeks
 
 https://www.cnbc.com/2020/04/22/no-lockdown-in-sweden-but-stockholm-could-see-herd-immunity-in-weeks.html
 
@@ -140,27 +140,25 @@ $ grep -hw SWEDEN ~/WAE/virus/coronavirus/output/by.new.spread.*
 85.0953% = SWEDEN 20200422
 ```
 
-> Experts demolish studies suggesting COVID-19 is no worse than flu
+> #### Experts demolish studies suggesting COVID-19 is no worse than flu
 
 > Authors of widely publicized antibody studies “owe us all an apology,” one expert says.
 
 https://arstechnica.com/science/2020/04/experts-demolish-studies-suggesting-covid-19-is-no-worse-than-flu/
 
-> 'Happy hypoxia': unusual coronavirus effect baffles doctors
+> #### 'Happy hypoxia': unusual coronavirus effect baffles doctors
 
 > It is a mystery that has left doctors questioning the basic tenets of biology: Covid-19 patients who are talking and apparently not in distress, but who have oxygen levels low enough to typically cause unconsciousness or even death.
 
 https://www.theguardian.com/world/2020/may/03/happy-hypoxia-unusual-coronavirus-effect-baffles-doctors
 
-> The mystery of the pandemic's ‘happy hypoxia’
+> #### The mystery of the pandemic's ‘happy hypoxia’
 
 > Among the many surprises of the new coronavirus is one that seems to defy basic biology: infected patients with extraordinarily low blood-oxygen levels, or hypoxia, scrolling on their phones, chatting with doctors, and generally describing themselves as comfortable. Clinicians call them happy hypoxics.
 
 https://science.sciencemag.org/content/368/6490/455
 
-> HEALTH AND SCIENCE
-
-> The coronavirus has mutated and appears to be more contagious now, new study finds
+> #### The coronavirus has mutated and appears to be more contagious now, new study finds
 
 > The study has yet to be peer-reviewed, but the researchers noted that news of the mutation was of "urgent concern" considering the more than 100 vaccines in the process of being developed to prevent Covid-19.
 
@@ -168,7 +166,7 @@ https://science.sciencemag.org/content/368/6490/455
 
 https://www.cnbc.com/2020/05/05/the-coronavirus-mutated-and-appears-to-be-more-contagious-now-new-study-finds.html
 
-> U.S. COVID-19 death rate is 1.3%, study finds
+> #### U.S. COVID-19 death rate is 1.3%, study finds
 
 > On the other hand, the new estimate is much lower than prior death rate calculations. For example, China's COVID-19 death rate was initially reported to be 5.6%, falling to 3.8% by Feb. 20. But that could be due to timing: As in China, U.S. rates were much higher in the early stages of the pandemic, Basu noted.
 
@@ -202,7 +200,7 @@ $ grep -h " US " ~/WAE/virus/coronavirus/output/by.new.mortality.202005*
 26.0000% = US 20200509 
 ```
 
-> Leaked White House data shows infections spiking more than 1,000% in rural areas that backed Trump
+> #### Leaked White House data shows infections spiking more than 1,000% in rural areas that backed Trump
 
 > "Anybody that claims we're on a downward trajectory nationally is out of touch with reality," Dr. Irwin Redlener, the director of the Columbia University National Center for Disaster Preparedness, told NBC News, adding that even the rising numbers do not tell the full story. 
 
@@ -223,6 +221,49 @@ $ grep -hn " US " ~/WAE/virus/coronavirus/output/by.new.spread.20200{4,5}{10..12
 178:90.9990% = US 20200411 
 180:76.7096% = US 20200510 
 186:90.7458% = US 20200412 
+```
+
+> #### Sweden stayed open. A deadly month shows the risks
+
+> “It’s not a very flattering comparison for Sweden, which has such a great public health system,” said Andrew Noymer, a demographer at the University of California at Irvine. “There’s no reason Sweden should be doing worse than Norway, Denmark and Finland.”
+
+> “Sweden will be judged at the finish line,” Mr. Noymer said. “But it’s a very high-stakes risk, and the consequences are people's lives.”
+
+https://www.nytimes.com/interactive/2020/05/15/world/europe/sweden-coronavirus-deaths.html 20200517
+
+```
+$ grep -hn -e DENMARK -e FAEROE-ISLANDS -e FINLAND -e GREENLAND -e ICELAND -e NORWAY -e SWEDEN /data/data/com.termux/files/home/WAE/virus/coronavirus/output/by.new.mortality.20200409.md
+24:0.8646% = ICELAND 20200409 
+87:12.7907% = FINLAND 20200409 
+88:12.8514% = DENMARK 20200409 
+189:73.9130% = FAEROE-ISLANDS 20200409 
+190:78.2313% = NORWAY 20200409 
+193:81.4312% = SWEDEN 20200409 
+204:100.0000% = GREENLAND 20200409 
+$ grep -hn -e DENMARK -e FAEROE-ISLANDS -e FINLAND -e GREENLAND -e ICELAND -e NORWAY -e SWEDEN /data/data/com.termux/files/home/WAE/virus/coronavirus/output/by.new.mortality.20200517.md
+7:0.5568% = ICELAND 20200517 
+77:5.6351% = DENMARK 20200517 
+78:5.6426% = FINLAND 20200517 
+176:42.5650% = SWEDEN 20200517 
+189:87.8788% = NORWAY 20200517 
+201:100.0000% = FAEROE-ISLANDS 20200517 
+203:100.0000% = GREENLAND 20200517 
+$ grep -hn -e DENMARK -e FAEROE-ISLANDS -e FINLAND -e GREENLAND -e ICELAND -e NORWAY -e SWEDEN /data/data/com.termux/files/home/WAE/virus/coronavirus/output/by.new.spread.20200409.md
+11:0.0000% = FAEROE-ISLANDS 20200409 
+15:0.0000% = GREENLAND 20200409 
+74:58.6905% = ICELAND 20200409 
+84:66.3770% = DENMARK 20200409 
+147:87.4403% = FINLAND 20200409 
+166:89.8814% = SWEDEN 20200409 
+209:97.7714% = NORWAY 20200409 
+$ grep -hn -e DENMARK -e FAEROE-ISLANDS -e FINLAND -e GREENLAND -e ICELAND -e NORWAY -e SWEDEN /data/data/com.termux/files/home/WAE/virus/coronavirus/output/by.new.spread.20200517.md
+8:0.0000% = FAEROE-ISLANDS 20200517 
+13:0.0000% = GREENLAND 20200517 
+33:0.3330% = ICELAND 20200517 
+62:11.1131% = DENMARK 20200517 
+73:17.3221% = FINLAND 20200517 
+174:71.7403% = SWEDEN 20200517 
+208:96.8004% = NORWAY 20200517 
 ```
 
 This command shows the current statistics for [the default country](https://github.com/WAE/coronavirus/blob/master/.conf/COUNTRYNAME), Iceland and Norway: 	
