@@ -284,6 +284,14 @@ https://www.foxnews.com/science/dogs-trained-smell-coronavirus-in-us-patients 20
 
 https://www.foxnews.com/science/trial-dogs-sniff-covid-19-uk-starts 20200518
 
+> #### Prescribed for Covid19 positive patients, here is why eggs are so good for your immunity
+
+> Eggs are super good for your immunity
+
+> In a welcome move, authorities are also providing a lot of healthcare workers and frontline heroes eggs daily to boost immunity.  A new challenge #eggsforimmunity has also gone viral on Twitter, wherein users are sharing pictures of the many ways they have eggs, talking of the several nutrient-rich benefits.
+
+https://m.timesofindia.com/life-style/health-fitness/diet/prescribed-for-covid19-positive-patients-here-is-why-eggs-are-so-good-for-your-immunity/photostory/75183540.cms 20200525
+
 This command shows the current statistics for [the default country](https://github.com/WAE/coronavirus/blob/master/.conf/COUNTRYNAME), Iceland and Norway: 	
 
 ```
