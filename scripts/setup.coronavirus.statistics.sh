@@ -59,7 +59,7 @@ _INSTALL_() {
 	printf "%s\\n" "$RDR setup:  DONE"
 }
 
-SIAD="https://github.com/WAE/coronavirus"
+SIAD="git://github.com/WAE/coronavirus"
 [ -d "$RDR" ] && cd "$RDR" || _INSTALL_
 ~/WAE/virus/coronavirus/coronavirus.statistics.zsh
 # setup.coronavirus.statistics.sh EOF
