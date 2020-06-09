@@ -23,17 +23,17 @@ _HELP_() {
 	grep -h -e "^\\#\\ \\#" -e "^\\	\\#\\ \\#" "$1" | sed "s/^\\#\\ \\#\\ //g" | sed "s/^\\	\\#\\ \\#\\ //g"  
 	# # To install coronavirus.statistics.sh, copy and paste:
 	# # ```
-	# #    au git wget zsh || apt install git wget zsh #  installs git, wget and zsh with apt or au (https://wae.github.io/au/)
+	# #    au git wget zsh || apt install git wget zsh #  install git, wget and zsh with apt or au (https://wae.github.io/au/)
 	# # 
-	# #    mkdir -p ~/WAE/virus/covid19/ #  creates directories
+	# #    mkdir -p ~/WAE/virus/covid19/ #  create directories
 	# # 
-	# #    cd ~/WAE/virus/ #  changes working directory
+	# #    cd ~/WAE/virus/ #  change working directory
 	# # 
-	# #    git clone https://github.com/WAE/covid19 #  clones repository
+	# #    git clone https://github.com/WAE/covid19 #  clone repository
 	# # 
-	# #    ~/WAE/virus/covid19.statistics.zsh #  lists country names
+	# #    ~/WAE/virus/covid19.statistics.zsh #  list country names
 	# # 
-	# #    ~/WAE/virus/covid19.statistics.zsh new-zealand uk #  lists statistics
+	# #    ~/WAE/virus/covid19.statistics.zsh new-zealand uk #  list statistics
 	# # 
 	# # ```
 }
@@ -52,7 +52,7 @@ _INSTALL_() {
 	[ ! -z "$(command -v "git")" ] || _INSTALLCOMS_
 	[ ! -z "$(command -v "wget")" ] || _INSTALLCOMS_
 	[ ! -z "$(command -v "zsh")" ] || _INSTALLCOMS_
-	mkdir -p "$RDR" # creates directories
+	mkdir -p "$RDR" # create directories
 	cd "$HOME/WAE/virus/" # change working directory
 	git clone "$SIAD" || printf "%s\\n" "$STRING3"
 	cd "$RDR"
