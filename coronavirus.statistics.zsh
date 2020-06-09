@@ -53,7 +53,7 @@ _INSTALL_() {
 	[ ! -z "$(command -v "git")" ] || _INSTALLCOMS_
 	[ ! -z "$(command -v "wget")" ] || _INSTALLCOMS_
 	[ ! -z "$(command -v "zsh")" ] || _INSTALLCOMS_
-	mkdir -p "$RDR" # creates directories
+	mkdir -p "$RDR" # create directories
 	cd "$HOME/WAE/virus/" # change working directory
 	git clone "$SIAD" || printf "\\e[1;38;5;117m%s\\e[0m\\n" "$STRING3"
 	cd "$RDR"
