@@ -292,6 +292,10 @@ https://www.foxnews.com/science/trial-dogs-sniff-covid-19-uk-starts 20200518
 
 https://m.timesofindia.com/life-style/health-fitness/diet/prescribed-for-covid19-positive-patients-here-is-why-eggs-are-so-good-for-your-immunity/photostory/75183540.cms 20200525
 
+> ‘Maybe they can’t breathe’: NYPD official offers tone deaf reason for cops ditching masks
+
+https://nypost.com/2020/06/09/nypd-big-on-cops-ditching-masks-at-george-floyd-protests/
+
 This command shows the current statistics for [the default country](https://github.com/WAE/coronavirus/blob/master/.conf/COUNTRYNAME), Iceland and Norway: 	
 
 ```
