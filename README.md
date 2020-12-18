@@ -296,6 +296,10 @@ https://m.timesofindia.com/life-style/health-fitness/diet/prescribed-for-covid19
 
 https://nypost.com/2020/06/09/nypd-big-on-cops-ditching-masks-at-george-floyd-protests/
 
+20200924 https://www.theguardian.com/world/2020/sep/24/close-to-100-accuracy-airport-enlists-sniffer-dogs-to-test-for-covid-19
+
+20201216 https://nypost.com/2020/12/16/wearing-a-used-mask-could-worse-than-no-mask-amid-covid-19-study/
+
 This command shows the current statistics for [the default country](https://github.com/WAE/coronavirus/blob/master/.conf/COUNTRYNAME), Iceland and Norway: 	
 
 ```
